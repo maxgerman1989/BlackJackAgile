@@ -68,14 +68,12 @@ public class GamePanel extends JPanel implements ActionListener
         bottomItems.add(betPanel);
         bottomItems.add(optionsPanel);
         add(bottomItems, BorderLayout.SOUTH);
-        
-        // opaque stuff
+
         betPanel.setOpaque(false);
         dealerPanel.setOpaque(false);
         optionsPanel.setOpaque(false);
         bottomItems.setOpaque(false);
         
-        // add listeners to buttons
         newGameButton.addActionListener(this);
         hitButton.addActionListener(this);
         doubleButton.addActionListener(this);
