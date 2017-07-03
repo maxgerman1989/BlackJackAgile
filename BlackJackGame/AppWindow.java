@@ -23,7 +23,6 @@ public class AppWindow extends JFrame
     {
 		
         super("Blackjack");
-        //this.setContentPane(new JLabel(new ImageIcon("C:\\Users\\Max\\Desktop\\bb.png")));
         addComponentListener(this);
         
         Dimension windowSize = new Dimension(WIDTH, HEIGHT);
