@@ -272,7 +272,6 @@ public class GamePanel extends JPanel implements ActionListener
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-        // redraw cards and totals
         table.update(dealer.getHand(), player.getHand(), (dealer.areCardsFaceUp()) ? true : false);
 		table.setNames(dealer.getName(), player.getName());
         table.repaint();
@@ -284,7 +283,6 @@ public class GamePanel extends JPanel implements ActionListener
             moreFunds();
         }
         
-        // redraw bet
         currentBet.setText(Double.toString(player.getBet()));
         playerWallet.setText(Double.toString(player.getWallet()));
     }
